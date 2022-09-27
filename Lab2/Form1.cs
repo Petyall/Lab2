@@ -15,26 +15,40 @@ namespace Lab2
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-
-        }
-        Graphics g;
-        private void Form1_Paint(object sender, PaintEventArgs e)
-        {
-            g = CreateGraphics();
-
-            List<Shape> list = new List<Shape>()
+            int k = 0;
+            string p;
+            foreach (var i in list)
             {
-                new Kvadrat("Квадрат", 10, 20, 100),
-                new ColorKvadrat("Квадрат с заданным цветом заливки", 30, 40, 100, Color.Red),
-                new Kvadrat4("Квадрат задается координатами всех четырех вершин", 500, 600, 100, 100),
+                dataGridView1.Rows.Add(new DataGridViewRow());
+                p = i.P().ToString();
+                dataGridView1.Rows[k].Cells[1].Value = p;
+                p = i.S().ToString();
+                dataGridView1.Rows[k].Cells[0].Value = p;
+                p = i.ToString();
+                dataGridView1.Rows[k].Cells[2].Value = p;
+                k++;
+            }
+        }
+
+        Graphics g;
+        List<Shape> list = new List<Shape>()
+            {
+                new Kvadrat("Обычный квадрат", 20, 20, 60, 20, 20, 60, 60, 60),
+                new Kvadrat("Наклоненный квадрат", 80, 40, 110, 10, 110,  70, 140, 40),
+                new ColorKvadrat("Цветной квадрат", 20, 90, 60, 90, 20, 130, 60, 130, Color.DarkViolet),
+                new ColorKvadrat("Наклоненный цветной квадрат", 80, 110, 110, 80, 110,  140, 140, 110, Color.DarkViolet),
             };
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            g = CreateGraphics();
             list.ForEach(a => a.Draw(g));
+        }
+
+        private void True(object sender, DataGridViewAutoSizeModeEventArgs e)
+        {
 
         }
+
     }
 }

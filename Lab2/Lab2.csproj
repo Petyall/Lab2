@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Kvadrat4.cs" />
     <Compile Include="ICalcPS.cs" />
     <Compile Include="ColorKvadrat.cs" />
     <Compile Include="IDraw.cs" />

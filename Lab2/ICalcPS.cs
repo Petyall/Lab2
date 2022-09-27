@@ -12,12 +12,12 @@ namespace Lab2
         /// Вычисление периметра
         /// </summary>
         /// <returns>Периметр</returns>
-        float P();
+        double P();
 
         /// <summary>
         /// Вычисление площади
         /// </summary>
         /// <returns>Площадь</returns>
-        float S();
+        double S();
     }
 }

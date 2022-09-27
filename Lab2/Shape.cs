@@ -10,26 +10,26 @@ namespace Lab2
     abstract class Shape : IDraw, ICalcPS
     {
         public string Name { get; set; }
-        public int X { get; set; }
-        public int Y { get; set; }
+        public int X1 { get; set; }
+        public int Y1 { get; set; }
 
         public Shape()
         {
             Name = "Figura";
-            X = 0;
-            Y = 0;
+            X1 = 0;
+            Y1 = 0;
         }
 
-        public Shape(string name, int x, int y)
+        public Shape(string name, int x1, int y1)
         {
             Name = name;
-            X = x;
-            Y = y;
+            X1 = x1;
+            Y1 = y1;
         }
 
         public abstract void Draw(Graphics g);
-        public abstract float P();
-        public abstract float S();
+        public abstract double P();
+        public abstract double S();
 
     }
 
