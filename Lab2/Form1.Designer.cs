@@ -45,13 +45,13 @@
             this.Column3});
             this.dataGridView1.Location = new System.Drawing.Point(12, 151);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(754, 163);
+            this.dataGridView1.Size = new System.Drawing.Size(614, 154);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.AutoSizeRowsModeChanged += new System.Windows.Forms.DataGridViewAutoSizeModeEventHandler(this.True);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(272, 45);
+            this.button1.Location = new System.Drawing.Point(288, 44);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(204, 68);
             this.button1.TabIndex = 1;
@@ -62,18 +62,18 @@
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "Площадь фигуры";
+            this.Column1.HeaderText = "S";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 110;
+            this.Column1.Width = 39;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Периметр фигуры";
+            this.Column2.HeaderText = "P";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 114;
+            this.Column2.Width = 39;
             // 
             // Column3
             // 
@@ -85,7 +85,7 @@
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(791, 337);
+            this.ClientSize = new System.Drawing.Size(673, 328);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
